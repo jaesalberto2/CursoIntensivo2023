@@ -1,0 +1,15 @@
+package menu;
+import javax.swing.JOptionPane;
+
+public class MenuSaludos {
+
+	public static void main(String[] args) {
+		int opc;
+		opc = Integer.parseInt(JOptionPane.showInputDialog(null,""
+				+ "1.-SaludoMX\n2.-Saludo USA \n3.-Saludo Italiano"
+				+ "\nSaludo Aleman \n"
+				+ "\n5.-Saludo Frances\n6.-Salir",JOptionPane.INFORMATION_MESSAGE));
+
+	}
+
+}

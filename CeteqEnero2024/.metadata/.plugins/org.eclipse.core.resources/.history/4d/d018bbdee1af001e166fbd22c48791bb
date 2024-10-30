@@ -1,0 +1,11 @@
+package com;
+
+public class Perro {
+	
+	private String raza, color;
+	private double tamaño;
+	
+	
+	
+
+}

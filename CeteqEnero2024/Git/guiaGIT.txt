@@ -1,0 +1,164 @@
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git
+$ git clone https://github.com/AlexBravo24/JavaEnero2024.git
+Cloning into 'JavaEnero2024'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+Receiving objects: 100% (6/6), done.
+Resolving deltas: 100% (1/1), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git
+$ cd JavaEnero2024
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (main)
+$ ls
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (main)
+$ git checkout develop
+Switched to a new branch 'develop'
+branch 'develop' set up to track 'origin/develop'.
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (develop)
+$ git branch ramauno_jaes
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (develop)
+$ git checkout ramauno_jaes
+Switched to branch 'ramauno_jaes'
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git status
+On branch ramauno_jaes
+nothing to commit, working tree clean
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git status
+On branch ramauno_jaes
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        prueba_JAES.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git add .
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git status
+On branch ramauno_jaes
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   prueba_JAES.txt
+
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git commit -m "Practica JAES"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ALBERTO@a.(none)')
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git config --global user.email jaesalberto2@gmail.com
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git config --global user.name jaesalberto2
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git commit -m "Practica JAES"
+[ramauno_jaes ace6263] Practica JAES
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 prueba_JAES.txt
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git push
+fatal: The current branch ramauno_jaes has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ramauno_jaes
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git push --set-upstream origin ramauno_jaes
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 285 bytes | 285.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'ramauno_jaes' on GitHub by visiting:
+remote:      https://github.com/AlexBravo24/JavaEnero2024/pull/new/ramauno_jaes
+remote:
+To https://github.com/AlexBravo24/JavaEnero2024.git
+ * [new branch]      ramauno_jaes -> ramauno_jaes
+branch 'ramauno_jaes' set up to track 'origin/ramauno_jaes'.
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (ramauno_jaes)
+$ git checkout develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (develop)
+$ git pull
+remote: Enumerating objects: 69, done.
+remote: Counting objects: 100% (69/69), done.
+remote: Compressing objects: 100% (55/55), done.
+remote: Total 66 (delta 16), reused 32 (delta 0), pack-reused 0
+Unpacking objects: 100% (66/66), 13.55 KiB | 7.00 KiB/s, done.
+From https://github.com/AlexBravo24/JavaEnero2024
+   fbc7e3a..adf7cba  develop               -> origin/develop
+   8cee22d..fd42a0a  main                  -> origin/main
+ * [new branch]      rama1_AGG             -> origin/rama1_AGG
+ * [new branch]      rama1_aucdo           -> origin/rama1_aucdo
+ * [new branch]      rama1_frr             -> origin/rama1_frr
+ * [new branch]      ramauno_amgc          -> origin/ramauno_amgc
+ * [new branch]      ramauno_cgat          -> origin/ramauno_cgat
+ * [new branch]      ramauno_egc           -> origin/ramauno_egc
+ * [new branch]      ramauno_jabr          -> origin/ramauno_jabr
+ * [new branch]      ramauno_jlt           -> origin/ramauno_jlt
+ * [new branch]      ramauno_ldgr          -> origin/ramauno_ldgr
+ * [new branch]      ramauno_oyrv          -> origin/ramauno_oyrv
+ * [new branch]      ramauno_rbi           -> origin/ramauno_rbi
+ * [new branch]      ramauno_rfg           -> origin/ramauno_rfg
+ * [new branch]      revert-12-ramauno_rfg -> origin/revert-12-ramauno_rfg
+Updating fbc7e3a..adf7cba
+Fast-forward
+ Prueba_CGAT.txt  |  1 +
+ Prueba_EGC.txt   |  1 +
+ Prueba_FRR.txt   |  1 +
+ Prueba_JABR.txt  |  1 +
+ Prueba_JLT.txt   | 12 ++++++++++++
+ Prueba_LDGR.txt  |  1 +
+ Prueba_OYRV.txt  |  1 +
+ Prueba_RBI.txt   |  1 +
+ Prueba_RFG.txt   |  1 +
+ prueba_AUCDO.txt |  1 +
+ prueba_JAES.txt  |  0
+ 11 files changed, 21 insertions(+)
+ create mode 100644 Prueba_CGAT.txt
+ create mode 100644 Prueba_EGC.txt
+ create mode 100644 Prueba_FRR.txt
+ create mode 100644 Prueba_JABR.txt
+ create mode 100644 Prueba_JLT.txt
+ create mode 100644 Prueba_LDGR.txt
+ create mode 100644 Prueba_OYRV.txt
+ create mode 100644 Prueba_RBI.txt
+ create mode 100644 Prueba_RFG.txt
+ create mode 100644 prueba_AUCDO.txt
+ create mode 100644 prueba_JAES.txt
+
+ALBERTO@a MINGW64 ~/Documents/herramientas/CeteqEnero2024/Git/Git/JavaEnero2024 (develop)
+$

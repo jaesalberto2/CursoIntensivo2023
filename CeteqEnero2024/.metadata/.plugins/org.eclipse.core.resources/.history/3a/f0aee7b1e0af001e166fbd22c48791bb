@@ -1,0 +1,21 @@
+package com;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Ejemplo de instanciar una nueva persona
+		
+		Persona persona1 = new Persona("Valeria", "Femenino", 25);
+				
+		//Ejemplo de instanciar un nuevo empleado
+		
+		Empleado desarrollador = new Empleado("Alex", "Masculino", 24, "ALX33", "Java JR", "Matutino", 25000);
+		
+		System.out.println(persona1);
+		System.out.println(desarrollador);
+
+	}
+
+}
